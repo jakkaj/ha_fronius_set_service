@@ -10,7 +10,7 @@ This is tested with a Fronius Gen24 Symo.
 
 ## Setup
 
-First Copy the files from ```fronius_settings_service``` in to your custom_components folder under HA config.
+First copy the folder (including all subfiles) ```fronius_settings_service``` in to your custom_components folder under HA config.
 
 Next create or edit ```secrets.yaml``` in the config root and add "fronius_password: <your password>".
 
