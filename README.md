@@ -12,7 +12,7 @@ This is tested with a Fronius Gen24 Symo.
 
 First copy the folder (including all subfiles) ```fronius_settings_service``` in to your custom_components folder under HA config.
 
-Next create or edit ```secrets.yaml``` in the config root and add "fronius_password: <your password>".
+Next create or edit ```secrets.yaml``` in the config root and add ```fronius_password: <your password>```.
 
 In ```configuration.yaml``` add (and change to correct ip address):
 
