@@ -56,7 +56,7 @@ def set_time_of_use(power=None, remove=False):
                     "Active": True,
                     "Power": power,
                     "ScheduleType": "CHARGE_MIN",
-                    "TimeTable": {"Start": "09:00", "End": "14:00"},
+                    "TimeTable": {"Start": "00:00", "End": "23:59"},
                     "Weekdays": {"Mon": True, "Tue": True, "Wed": True, "Thu": True, "Fri": True, "Sat": True, "Sun": True}
                 }
             ]
