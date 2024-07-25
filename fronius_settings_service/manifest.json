@@ -1,0 +1,8 @@
+{
+    "domain": "fronius_settings_service",
+    "name": "Fronius Settings Service",
+    "version": "1.0",
+    "dependencies": [],
+    "codeowners": [],
+    "requirements": ["requests"]
+} 

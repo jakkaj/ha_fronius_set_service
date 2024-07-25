@@ -1,0 +1,9 @@
+set_time_of_use:
+  description: "Set the Time of Use settings for the Fronius inverter"
+  fields:
+    power:
+      description: "Power value for the Time of Use setting."
+      example: 9000
+    remove:
+      description: "Remove the Time of Use settings."
+      example: true

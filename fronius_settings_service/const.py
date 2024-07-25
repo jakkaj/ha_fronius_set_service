@@ -1,0 +1,1 @@
+DOMAIN = "fronius_settings_service"
