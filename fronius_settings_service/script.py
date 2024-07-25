@@ -6,16 +6,24 @@ import hashlib
 import time
 
 # Configuration
-base_url = "http://192.168.1.66"
+base_url = None
 username = "technician"
 password = None
 login_endpoint = "/commands/Login"
 timeofuse_endpoint = "/config/timeofuse"
-referer_url = "http://192.168.1.66/"
+referer_url = None
 
 def set_password(pw):
     global password
     password = pw
+
+def set_base_url(url):
+    global base_url
+    base_url = url
+
+def set_referer_url(url):
+    global referer_url
+    referer_url = url
 
 def get_nonce(session, login_url):
     initial_response = session.get(login_url, headers={'Referer': referer_url})

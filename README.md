@@ -14,15 +14,14 @@ First Copy the files from ```fronius_settings_service``` in to your custom_compo
 
 Next create or edit ```secrets.yaml``` in the config root and add "fronius_password: <your password>".
 
-In ```configuration.yaml``` add 
+In ```configuration.yaml``` add (and change to correct ip address):
 
 ```yaml
 fronius_settings_service:
   password: !secret fronius_password
+  base_url: http://192.168.1.66
+  referer_url: http://192.168.1.66/
 ```
-
-Also change your base URL and referrer URL in ```script.py``` (sorry was too lazy!)
-
 
 
 Restart HA, and you should be able to call the service. It has two parameters:
